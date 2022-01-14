@@ -1,0 +1,331 @@
+.body {
+  display: flex !important;
+  padding-left: 14rem !important;
+  margin-top: 30px !important;
+}
+.icons {
+  margin-left: 580px !important;
+  margin-top: -11px !important;
+}
+.header {
+  font-size: 23px !important;
+  font-weight: 400;
+}
+#b1 {
+  text-align: center !important;
+}
+#b2 {
+  text-align: center !important;
+}
+#b3 {
+  text-align: center !important;
+}
+img,
+svg {
+  width: 80px !important;
+  padding-left: 26px !important;
+  padding-bottom: 26px !important;
+}
+.container1 {
+  display: inline-block !important;
+  border-width: 3.75pt;
+  margin-left: 27px !important;
+  width: 95% !important;
+  position: relative;
+  background-color: #fff !important;
+  height: 567px !important;
+  border-radius: 1.25pc;
+  border-color: #f5821f;
+  border-style: solid;
+}
+.container2 {
+  margin-left: 277px !important;
+  border-width: 3.75pt;
+  width: 63% !important;
+  background-color: #fff !important;
+  height: 583px !important;
+  border-style: solid;
+  background-color: #0fa0c5 !important;
+  border: none !important;
+}
+.page {
+  display: block !important;
+}
+.footer {
+  background-color: #deecf6 !important;
+  margin-top: -16px !important;
+}
+#replay {
+  margin-top: 22px !important;
+  width: 90px !important;
+}
+#showAns {
+  margin-top: 22px !important;
+  width: 90px !important;
+  padding-left: 20px !important;
+  margin-left: 496px !important;
+}
+#tapimage {
+  width: 243px !important;
+  height: 166px !important;
+}
+#patimage {
+  width: 243px !important;
+  height: 166px !important;
+}
+#mapimage {
+  width: 243px !important;
+  height: 166px !important;
+}
+.optionA {
+  border-color: #0fa0c5 !important;
+  border-style: solid;
+  width: 10% !important;
+  font-size: 36px !important;
+  text-align: center !important;
+  margin-right: 20px !important;
+  border-radius: 1.25pc !important;
+  background-color: #fff;
+}
+.optionA.select {
+  background-color: #0fa0c5 !important;
+}
+
+.optionP {
+  border-color: #0fa0c5 !important;
+  border-style: solid;
+  width: 10% !important;
+  font-size: 36px !important;
+  text-align: center !important;
+  margin-left: 20px !important;
+  border-radius: 1.25pc;
+  background-color: #fff;
+}
+.quetions {
+  display: flex !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+  margin-left: 345px !important;
+  margin-top: 60px !important;
+}
+.images {
+  display: flex !important;
+  margin-left: 40px !important;
+  margin-top: 30px !important;
+}
+
+.word {
+  font-size: 50px !important;
+  text-align: center !important;
+  display: inline-block !important;
+}
+.tap {
+  display: inline-block !important;
+  width: 50% !important;
+}
+.pat {
+  display: inline-block !important;
+  width: 50% !important;
+}
+.map {
+  justify-content: space-around !important;
+  margin-left: 246px !important;
+  margin-top: 30px !important;
+}
+#b1 {
+  width: 30px !important;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#b2 {
+  width: 30px !important;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#b3 {
+  width: 30px !important;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#image {
+  padding-bottom: 0px !important;
+  margin-top: -50px !important;
+  width: 10% !important;
+  height: 5% !important;
+  margin-left: -64px !important;
+}
+#imag {
+  padding-bottom: 0px !important;
+  margin-top: -50px !important;
+  width: 10% !important;
+  height: 5% !important;
+  margin-left: -64px !important;
+}
+@media (max-width: 1080px) {
+  .header {
+    margin-top: 10px !important;
+    display: inline !important;
+  }
+  .icons {
+    margin-left: 748px !important;
+    margin-top: -26px !important;
+  }
+  .optionA {
+    width: 14% !important;
+  }
+  .optionP {
+    width: 14% !important;
+  }
+  .quetions {
+    margin-left: 184px !important;
+    margin-bottom: 0px !important;
+    margin-top: 14px !important;
+  }
+  #tapimage {
+    width: 135px !important;
+    height: 135px !important;
+  }
+  #patimage {
+    width: 135px !important;
+    height: 135px !important;
+  }
+  #mapimage {
+    width: 135px !important;
+    height: 135px !important;
+  }
+  .tap {
+    display: flex !important;
+  }
+  .word {
+    font-size: 35px !important;
+  }
+  .container1 {
+    margin-left: 18px !important;
+    height: 482px !important;
+  }
+  .container2 {
+    height: 530px !important;
+  }
+  .images {
+    margin-top: 68px !important;
+  }
+  #b1 {
+    margin-top: 32px !important;
+  }
+  .helpModal-content {
+    padding: 7px !important;
+  }
+  .modal-content {
+    padding: 7px !important;
+  }
+  .footer {
+    display: flex !important;
+  }
+  #showAns {
+    margin-left: 340px !important;
+    padding-left: 40px !important;
+  }
+  img,
+  svg {
+    width: 73px !important;
+    padding-left: 37px !important;
+    padding-bottom: 11px !important;
+  }
+
+  .map {
+    margin-left: 115px !important;
+  }
+}
+@media (max-width: 768px) {
+  .icons {
+    margin-left: 443px !important;
+    margin-top: -37px !important;
+    display: block !important;
+  }
+  img,
+  svg {
+    padding-bottom: 3px !important;
+  }
+  .header {
+    display: block !important;
+  }
+  .container1 {
+    height: 495px !important;
+    margin-left: 17px !important;
+  }
+  #showAns {
+    margin-left: 196px !important;
+    padding-left: 36px !important;
+  }
+  .page {
+    margin-left: -185px !important;
+  }
+}
+@media (max-width: 426px) {
+  .icons {
+    margin-left: 271px !important;
+  }
+  #myBtn {
+    margin-right: 0px !important;
+  }
+  .page {
+    margin-left: -278px !important;
+  }
+  .container1 {
+    height: 493px !important;
+    margin-left: 13px !important;
+  }
+  #tapimage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #patimage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #mapimage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .tap {
+    margin-left: -15px !important;
+  }
+  .word {
+    font-size: 18px !important;
+  }
+  .container2 {
+    width: 61% !important;
+  }
+}
+@media (max-width: 320px) {
+  .icons {
+    margin-left: 167px !important;
+  }
+  .header {
+    font-size: 17px !important;
+  }
+  .container1 {
+    height: 584px !important;
+  }
+  .optionA {
+    width: 32% !important;
+  }
+  .optionP {
+    width: 32% !important;
+  }
+  .quetions {
+    margin-left: 47px !important;
+  }
+  .images {
+    display: inline-block !important;
+  }
+  .pat {
+    width: 100% !important;
+    margin-top: 20px !important;
+    margin-left: 83px !important;
+  }
+  .tap {
+    margin-left: 85px !important;
+    width: 100% !important;
+  }
+}

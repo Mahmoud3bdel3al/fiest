@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational RC</title>
+   <!-- CSS file Included -->
+   <link rel="stylesheet" 
+   type="text/css" href="game.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- JavaScript file included -->
+<script src="game.js"></script>
+<style>
+
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-image: url("images/dummy.jpg");
+    margin: auto;
+    padding: 20px;
+    border: 7px solid #f5821f !important ;
+    border-radius: 1.25pc;
+    width: 64%;
+    background-position: center !important;
+  }
+  .helpModal-content{
+    background-color: white !important;
+    margin: auto;
+    padding: 20px;
+    border: 7px solid #f5821f !important ;
+    border-radius: 1.25pc;
+    width: 64%;
+    display: flex;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right !important;
+  }
+  .closeModal{
+    text-align: right !important;
+    margin-left: inherit;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="body col-xs-12 noPadding header ">
+    
+   
+      <h6 class="header ">Complete the words.</h6>
+        <div class="icons">
+          <span id="myBtn"><img src="images/resourse_icon.png"></span>
+          <span id="helpModal"><img src="images/help_icon.png"></span>
+         
+         
+          <div id="hmodal" class="modal">
+
+            <!-- Modal content -->
+            <div class="helpModal-content">
+              <p class="modalText">Help content goes here.</p>
+              <span class="closeModal"style="height: 466px;"><img src="images/close_icon.png"></span>
+              
+            </div>
+          
+          </div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"style="height: 466px;"><img src="images/close_icon.png"></span>
+    
+  </div>
+
+</div>
+        </div>
+        
+    </div>
+    
+      <div class="pageContent col-xs-12 container2" ">
+        <div class="pageContent col-xs-12 container1" ">
+          <div class="quetions">
+            <button onclick ="changeBackgroundA();selectA();" class="optionA" id="a">a</button>
+            <button onclick="changeBackgroundP();selectP();" class="optionP" id="p" >p</button>
+          </div>
+         <div class="images ">
+          <img id="image" src="images/tikMark-small.png" style="display: none; width: 8% !important;
+          ">
+          <img id="imag" src="images/close_icon.png" style="display: none;width: 8% !important;">
+          <div class="tap">
+            <b  class="word">1 t <input type="text" id="b1" onclick=
+              "myfunc_3(); " readonly> p</b> 
+            <img id="tapimage" src="images/tap.png">
+            
+          </div>
+         <div class="pat">
+          <b class="word" >2   <input type="text" id="b2" onclick=
+            "myfunc_4(); " readonly> a t</b>
+       
+          <img id="patimage" src="images/pat.png">
+         </div>
+        </div>
+          <div class="map">
+            <b class="word" >3 m  <input type="text" id="b3" onclick=
+              "myfunc_5(); " readonly> p</b>
+            <img id="mapimage" src="images/map.png">
+           
+          </div>
+         </div>
+          
+        
+        <div class="footer col-xs-12">
+         <img onclick="reset();" id="replay" src="images/replay_icon.png">
+        <img onclick="full();" id="showAns" src="images/showAns_icon.png"> 
+        </div>
+      </div>
+     
+    </div>
+   
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var secondModal = document.getElementById("hmodal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    var helpModal = document.getElementById("helpModal");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var newSpan = document.getElementsByClassName("closeModal")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    helpModal.onclick = function() {
+      secondModal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    newSpan.onclick = function() {
+      secondModal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
